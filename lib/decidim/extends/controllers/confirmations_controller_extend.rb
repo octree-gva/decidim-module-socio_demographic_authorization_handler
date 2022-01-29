@@ -13,7 +13,7 @@ module ConfirmationsControllerExtend
       if first_login_and_not_authorized?(resource)
         decidim_verifications.new_authorization_path(action: :new, handler: :socio_demographic_authorization_handler)
       else
-        super
+        signed_in_root_path(resource)
       end
     end
 
