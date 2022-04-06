@@ -18,5 +18,4 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,lib}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
 
-  s.add_dependency "decidim-core", git: "https://github.com/decidim/decidim", branch: Decidim::SocioDemographicAuthorizationHandler.decidim_version
 end
