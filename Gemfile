@@ -14,10 +14,9 @@ require_relative "#{base_path}lib/decidim/socio_demographic_authorization_handle
 gem "decidim", git: "https://github.com/decidim/decidim", branch: Decidim::SocioDemographicAuthorizationHandler.decidim_version
 gem "decidim-socio_demographic_authorization_handler", path: "."
 
-gem "bootsnap", "~> 1.4"
-
-gem "puma", "~> 4.3.7"
-gem "uglifier", "~> 4.1"
+gem "bootsnap", "~> 1.5", ">= 1.5.1"
+gem "puma", "~> 5.1", ">= 5.1.1"
+gem "uglifier", "~> 4.2.0"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
